@@ -23,7 +23,7 @@ const SignIn = () => {
 
   const mutation = useMutation(apiClient.signIn, {
     onSuccess: async () => {
-      showToast({ message: 'SIgn in successful', type: 'SUCCESS' });
+      showToast({ message: 'SIgn in successful!', type: 'SUCCESS' });
       await queryClient.invalidateQueries('validateToken');
       navigate('/');
     },
@@ -44,7 +44,7 @@ const SignIn = () => {
         Email
         <input
           type="email"
-          className="border rounded w-full py-1 px-2 font-normal"
+          className="border border-[#5F6363] rounded-md w-full py-1 px-2 font-normal"
           {...register('email', { required: 'This field is required' })}
         />
         {errors.email && (
@@ -58,7 +58,7 @@ const SignIn = () => {
         Password
         <input
           type="password"
-          className="border rounded w-full py-1 px-2 font-normal"
+          className="border border-[#5F6363] rounded-md w-full py-1 px-2 font-normal"
           {...register('password', {
             required: 'This field is required',
             minLength: {
@@ -86,7 +86,7 @@ const SignIn = () => {
         </span>
         <button
           type="submit"
-          className="bg-sky-600 text-white p-2 font-bold hover:bg-sky-500 text-xl"
+          className="text-sm rounded-md bg-sky-600 text-white p-2 font-bold hover:bg-sky-500 md:text-xl"
         >
           Login
         </button>

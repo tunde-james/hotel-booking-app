@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="bg-sky-800 py-6">
       <div className="container mx-auto flex justify-between">
-        <span className="text-3xl text-white font-bold tracking-tight">
+        <span className="text-xl text-white font-bold tracking-tight md:text-3xl">
           <Link to="/">chillax.com</Link>
         </span>
 
@@ -18,22 +18,22 @@ const Header = () => {
             <>
               <Link
                 to="/my-bookings"
-                className="flex items-center text-white px-3 font-bold hover:bg-sky-600"
+                className="text-sm text-center flex items-center text-white px-3 font-bold hover:bg-sky-600 md:text-base"
               >
                 My Bookings
               </Link>
               <Link
                 to="/my-hotels"
-                className="flex items-center text-white px-3 font-bold hover:bg-sky-600"
+                className="text-sm text-center flex items-center text-white px-3 font-bold hover:bg-sky-600 md:text-base"
               >
-                My Bookings
+                My Hotels
               </Link>
               <SignOutButton />
             </>
           ) : (
             <Link
               to="/sign-in"
-              className="flex bg-white items-center text-sky-600 px-3 font-bold hover:bg-gray-100"
+              className="text-sm flex bg-white rounded-md items-center text-sky-600 px-3 font-bold hover:bg-gray-100 md:text-base"
             >
               Sign In
             </Link>

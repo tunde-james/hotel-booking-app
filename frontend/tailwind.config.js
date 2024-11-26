@@ -4,8 +4,11 @@ export default {
   theme: {
     extend: {},
     container: {
+      center: true,
       padding: {
-        md: '10rem',
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '10rem',
       },
     },
   },
