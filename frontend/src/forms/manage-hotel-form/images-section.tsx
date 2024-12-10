@@ -1,6 +1,6 @@
 import { useFormContext } from 'react-hook-form';
 import { HotelFormData } from './manage-hotel-form';
-import { Trash2 } from 'lucide-react';
+import { FaRegTrashAlt } from 'react-icons/fa';
 
 const ImagesSection = () => {
   const {
@@ -38,7 +38,7 @@ const ImagesSection = () => {
                   onClick={(event) => handleDelete(event, url)}
                   className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white"
                 >
-                  <Trash2 />
+                  <FaRegTrashAlt />
                 </button>
               </div>
             ))}

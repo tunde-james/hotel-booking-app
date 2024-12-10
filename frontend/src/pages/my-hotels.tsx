@@ -62,7 +62,7 @@ const MyHotels = () => {
               </p>
 
               <p className="border border-slate-300 rounded-md p-1 flex items-center">
-                <Star className="mr-1" />
+                <Star className="mr-1 fill-[#FFE234] stroke-none" />
                 {hotel.starRating} Star Rating
               </p>
             </div>
