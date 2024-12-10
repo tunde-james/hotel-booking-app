@@ -2,7 +2,7 @@ import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
 import { Banknote, Building2, Hotel, Map, Star } from 'lucide-react';
 
-import * as apiClient from '../api.client';
+import * as apiClient from '../api-client';
 
 const MyHotels = () => {
   const { data: hotelData } = useQuery(

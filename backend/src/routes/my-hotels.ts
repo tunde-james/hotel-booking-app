@@ -54,7 +54,7 @@ router.post(
 
       res.status(201).send(hotel);
     } catch (error) {
-      console.log('Error creating hotel: ', error);
+      console.log(error);
       res.status(500).json({ message: 'Something went wrong' });
     }
   }
@@ -71,6 +71,7 @@ router.get('/', verifyToken, async (req: Request, res: Response) => {
 
 router.get('/:id', verifyToken, async (req: Request, res: Response) => {
   const id = req.params.id.toString();
+  
   try {
     const hotel = await Hotel.findOne({
       _id: id,
